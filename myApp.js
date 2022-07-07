@@ -17,7 +17,7 @@ const PersonSchema = new Schema({
     required: true,
   },
   age: Number,
-  faveFoods: [String],
+  favoriteFoods: [String],
 });
 let Person = mongoose.model("Person", PersonSchema);
 
