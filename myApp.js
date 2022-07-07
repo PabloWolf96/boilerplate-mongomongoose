@@ -9,7 +9,6 @@ mongoose
   .then(() => {
     console.log("Connected to db");
   });
-const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const PersonSchema = new Schema({
