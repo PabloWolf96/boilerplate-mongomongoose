@@ -1,0 +1,11 @@
+const Schema = require("mongoose").Schema;
+
+const PersonSchema = new Schema({
+  name: {
+    type: String,
+    required: true,
+  },
+  age: Number,
+  faveFoods: [String],
+});
+module.exports = mongoose.model("Person", PersonSchema);

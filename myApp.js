@@ -10,7 +10,7 @@ mongoose
     console.log("Connected to db");
   });
 
-let Person;
+let Person = require("./models/person");
 
 const createAndSavePerson = (done) => {
   done(null /*, data*/);
