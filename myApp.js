@@ -9,8 +9,18 @@ mongoose
   .then(() => {
     console.log("Connected to db");
   });
+const mongoose = require("mongoose");
+const Schema = mongoose.Schema;
 
-let Person = require("./models/person");
+const PersonSchema = new Schema({
+  name: {
+    type: String,
+    required: true,
+  },
+  age: Number,
+  faveFoods: [String],
+});
+let Person = mongoose.model("Person", PersonSchema);
 
 const createAndSavePerson = (done) => {
   done(null /*, data*/);
